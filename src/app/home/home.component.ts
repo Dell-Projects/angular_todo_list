@@ -47,10 +47,12 @@ export class HomeComponent implements OnInit {
   }
 
   addItem() {
-    this.goals.push(this.goalText);
-    this.goalText = null;
-    this.itemCount = this.goals.length;
-    this.dataService.changeGoal(this.goals);
+    if (this.goalText) {
+      this.goals.push(this.goalText);
+      this.goalText = null;
+      this.itemCount = this.goals.length;
+      this.dataService.changeGoal(this.goals);
+    }
   }
 
   removeItem(i:number) {
@@ -58,5 +60,4 @@ export class HomeComponent implements OnInit {
     this.dataService.changeGoal(this.goals);
     this.itemCount = this.goals.length;
   }
-
 }
