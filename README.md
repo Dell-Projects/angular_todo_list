@@ -8,7 +8,7 @@ This application was made for the Angular study based on Coursetro course.
 
 
 ## Accessing the application
--Via browser: dell-projects.github.io/angular_todo_list
+-Via browser: https://dell-projects.github.io/angular_todo_list
 
 -Or running locally:
 
